@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index.js --ignore dist/ res/ static/ --exec babel-node",
+    "start": "nodemon src/index.js --ignore dist/ res/ static/ /walletFile --exec babel-node",
     "prod-wallet": "webpack --config webpack.prod.js",
     "dev-wallet": "webpack-dev-server --open --config webpack.dev.js"
   },
@@ -28,6 +28,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
+    "request-promise": "^4.2.2",
     "webpack": "^4.16.0",
     "webpack-cli": "^3.0.8",
     "webpack-merge": "^4.1.3",

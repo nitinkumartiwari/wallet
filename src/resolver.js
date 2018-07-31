@@ -4,13 +4,14 @@ const resolver = {
   createAccount: () => {
     return wallet.createAccount();
   },
-  validateAccount: (password) => {
-    return wallet.validateAccount(password);
+  validateAccount: (arg) => {
+    return wallet.validateAccount(arg.password);
   },
-  accountDetails: (password) => {
-    return wallet.createAccount(password);
+  accountDetails: async (arg) => {
+    const result = await wallet.accountDetails(arg.password);
+    return result;
   },
-  sendMoney: (password) => {
+  sendMoney: (arg) => {
     return {id:"Vf"};
   }
 };

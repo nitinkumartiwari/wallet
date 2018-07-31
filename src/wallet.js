@@ -1,6 +1,6 @@
 import Mnemonic from 'bitcore-mnemonic';
 import {createHmac} from 'crypto';
-import request from './request';
+import requestRPC from './request';
 
 class Wallet {
   craeteFileName(password) {
@@ -8,18 +8,32 @@ class Wallet {
     const fileName = createHmac('sha256', secret).update(password).digest('hex');
     return fileName;
   }
-  createAccount() {
+  async createAccount() {
     const mnemonic = new Mnemonic();
     const password = mnemonic.toString();
-    this.createWallet(password);
+    await this.createWallet(password);
     return password;
   }
   validateAccount(password) {
     return Mnemonic.isValid(password);
   }
-  accountDetails(password) {
-    this.openWallet(password);
+
+  async accountDetails(password) {
+    await this.openWallet(password);
+    const address = await this.getAddress();
+    await this.stopWallet();
+    console.log("address", address);
+    return {address};
   }
+
+  getAddress() {
+    const method = 'getaddress';
+    const params = {
+      account_index : 0,
+    };
+    requestRPC(method, params);
+  }
+
   openWallet(password) {
     const method = 'open_wallet';
     const filename = this.craeteFileName(password);
@@ -27,17 +41,24 @@ class Wallet {
       filename,
       password: filename,
     };
-    request(method, params);
+    requestRPC(method, params);
   }
-  createWallet(password) {
+
+  stopWallet() {
+    const method = 'stop_wallet';
+    requestRPC(method);
+  }
+
+  async createWallet(password) {
     const crypto = require('crypto');
     const filename = this.craeteFileName(password);
     const method = 'create_wallet';
     const params = {
       filename,
       password: filename,
+      language: 'English',
     }
-    request(method, params);
+    const res = await requestRPC(method, params);
   }
 }
 

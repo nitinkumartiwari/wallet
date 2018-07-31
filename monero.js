@@ -1,19 +1,29 @@
-import {exec} from 'child_process';
+import {execFile} from 'child_process';
 
 function moneroServer() {
-  const command = "monerod.exe --testnet";
-  execCommand(command);
+  const command = "monerod.exe";
+  const child = execFile(command, ['--testnet'], (error, stdout, stderr) => {
+    if (error) {
+      throw error;
+    }
+    console.log(stdout);
+  });
 }
 
 function moneroService() {
   const dir = __dirname + '/walletFile';
-  const command = `monero-wallet-rpc.exe --rpc-bind-port 8888 --testnet --wallet-dir ${dir}`;
-  execCommand(command);
+  const command = 'monero-wallet-rpc.exe';
+  const child = execFile(command, ['--disable-rpc-login', '--rpc-bind-port', '8888', '--testnet', '--wallet-dir', dir], (error, stdout, stderr) => {
+    if (error) {
+      throw error;
+    }
+    console.log(stdout);
+  });
 }
 
 function execCommand(cmd) {
   exec(cmd, (err, stdout, stderr) => {
-    console.err(err);
+    console.log(err);
     console.log(stdout);
     console.log(stderr);
   });

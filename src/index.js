@@ -4,6 +4,7 @@ import koaBody from 'koa-bodyparser';
 import { graphqlKoa, graphiqlKoa } from 'apollo-server-koa';
 import {myGraphQLSchema} from './graphql';
 import resolver from './resolver';
+import {moneroServer, moneroService} from '../monero';
 
 const app = new koa();
 const router = new koaRouter();
@@ -21,8 +22,10 @@ router.get('/graphiql', graphiqlKoa({ endpointURL: '/graphql'}));
 app.use(router.routes());
 app.use(router.allowedMethods());
 
+// moneroServer();
+// moneroService();
 
-function runServer() {
+async function runServer() {
 	return new Promise((resolve) => {
 		const server = app.listen(port, () => {
 			const address = server.address();
@@ -30,6 +33,8 @@ function runServer() {
 			console.log(`Server listening on ${url}`);
 			resolve(url);
 		});
+		moneroServer();
+		moneroService();
 	});
 }
 

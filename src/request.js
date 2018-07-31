@@ -1,29 +1,29 @@
 import http from 'http';
+import request from 'request-promise';
 
-export default function request(method, params) {
-  const options = {
-    hostname: '127.0.0.1',
-    port: 8888,
-    path: '/json_rpc',
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    method,
-    params,
-  };
-  const req = http.request(options, function(res) {
-    console.log('Status: ' + res.statusCode);
-    console.log('Headers: ' + JSON.stringify(res.headers));
-    res.setEncoding('utf8');
-    res.on('data', function (body) {
-      console.log('Body: ' + body);
+export default async function requestRPC(method, params) {
+  const hostname = '127.0.0.1';
+  const port = 8888;
+  let options = {
+       forever: true,
+       json: {'jsonrpc': '2.0', 'id': '0', 'method': method}
+   };
+
+   if (params) {
+       options['json']['params'] = params;
+   }
+
+   const res = new Promise((resolve) => {
+     request.post(`http://${hostname}:${port}/json_rpc`, options)
+       .then((result) => {
+           console.log("result", result);
+           if (result.hasOwnProperty('result')) {
+               resolve(result.result);
+           } else {
+               resolve(result);
+           }
+       });
     });
-  });
-  req.on('error', function(e) {
-    console.log('problem with request: ' + e.message);
-  });
-  // write data to request body
-  req.write('{"string": "Hello, World"}');
-  req.end();
+    const response = await res;
+    return response;
 }
