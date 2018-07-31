@@ -1,0 +1,37 @@
+2018-07-31 16:25:10.186	6040	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-07-31 16:25:10.921	6040	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:2952	Must specify --wallet-file or --generate-from-json or --wallet-dir
+2018-07-31 16:25:53.665	19768	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-07-31 16:25:55.588	19768	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:221	RPC username/password is stored in file monero-wallet-rpc.8888.login
+2018-07-31 16:25:55.604	19768	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:76	Binding on 127.0.0.1:8888
+2018-07-31 16:25:55.745	19768	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3009	Starting wallet RPC server
+2018-07-31 16:40:30.073	[RPC0]	ERROR	net.http	contrib/epee/include/net/http_protocol_handler.inl:378	simple_http_connection_handler<t_connection_context>::handle_invoke_query_line(): Failed to match first line: CREATE_WALLET /json_rpc HTTP/1.1
+Host: 127.0.0.1:8888
+Connection: close
+Content-Length: 0
+
+
+2018-07-31 16:40:30.085	[RPC0]	ERROR	net.http	contrib/epee/include/net/http_protocol_handler.inl:316	simple_http_connection_handler::handle_char_out: Error state!!!
+2018-07-31 18:29:26.341	[RPC0]	ERROR	net.http	contrib/epee/include/net/http_protocol_handler.inl:378	simple_http_connection_handler<t_connection_context>::handle_invoke_query_line(): Failed to match first line: CREATE_WALLET /json_rpc HTTP/1.1
+Content-Type: application/json
+Host: 127.0.0.1:8888
+Connection: close
+Transfer-Encoding: chunked
+
+1a
+{"string": "Hello, World"}
+0
+
+
+2018-07-31 18:29:26.353	[RPC0]	ERROR	net.http	contrib/epee/include/net/http_protocol_handler.inl:316	simple_http_connection_handler::handle_char_out: Error state!!!
+2018-07-31 18:30:34.786	[RPC0]	ERROR	net.http	contrib/epee/include/net/http_protocol_handler.inl:378	simple_http_connection_handler<t_connection_context>::handle_invoke_query_line(): Failed to match first line: CREATE_WALLET /json_rpc HTTP/1.1
+Content-Type: application/json
+Host: 127.0.0.1:8888
+Connection: close
+Transfer-Encoding: chunked
+
+1a
+{"string": "Hello, World"}
+0
+
+
+2018-07-31 18:30:34.790	[RPC0]	ERROR	net.http	contrib/epee/include/net/http_protocol_handler.inl:316	simple_http_connection_handler::handle_char_out: Error state!!!

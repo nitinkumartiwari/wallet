@@ -2,13 +2,13 @@ import wallet from './wallet';
 
 const resolver = {
   createAccount: () => {
-    return "vfdf";
+    return wallet.createAccount();
   },
   validateAccount: (password) => {
-    return false;
+    return wallet.validateAccount(password);
   },
   accountDetails: (password) => {
-    return {id: "fds"};
+    return wallet.createAccount(password);
   },
   sendMoney: (password) => {
     return {id:"Vf"};
