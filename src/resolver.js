@@ -1,18 +1,21 @@
 import wallet from './wallet';
 
 const resolver = {
-  createAccount: () => {
-    return wallet.createAccount();
-  },
-  validateAccount: (arg) => {
-    return wallet.validateAccount(arg.password);
-  },
-  accountDetails: async (arg) => {
-    const result = await wallet.accountDetails(arg.password);
+  createAccount: async () => {
+    const result = await wallet.createAccount();
     return result;
   },
-  sendMoney: (arg) => {
-    return {id:"Vf"};
+  logIn: async (args) => {
+    const result = await wallet.logIn(args.password);
+    return result;
+  },
+  accountDetails: async (args) => {
+    const result = await wallet.accountDetails(args.password);
+    return result;
+  },
+  sendMoney: async (args) => {
+    const result = await wallet.sendMoney(args);
+    return result
   }
 };
 
