@@ -22,31 +22,31 @@ class Wallet {
     await this.openWallet(password);
     const address = await this.getAddress();
     await this.stopWallet();
-    console.log("address", address);
     return {address};
   }
 
-  getAddress() {
+  async getAddress() {
     const method = 'getaddress';
     const params = {
       account_index : 0,
     };
-    requestRPC(method, params);
+    const response = await requestRPC(method, params);
+    return response.address;
   }
 
-  openWallet(password) {
+  async openWallet(password) {
     const method = 'open_wallet';
     const filename = this.craeteFileName(password);
     const params = {
       filename,
       password: filename,
     };
-    requestRPC(method, params);
+    await requestRPC(method, params);
   }
 
-  stopWallet() {
+  async stopWallet() {
     const method = 'stop_wallet';
-    requestRPC(method);
+    await requestRPC(method);
   }
 
   async createWallet(password) {

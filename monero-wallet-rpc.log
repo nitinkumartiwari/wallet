@@ -344,3 +344,82 @@ Transfer-Encoding: chunked
 2018-07-31 20:07:02.846	30304	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
 2018-07-31 20:07:03.299	30304	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:76	Binding on 127.0.0.1:8888
 2018-07-31 20:07:03.299	30304	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3009	Starting wallet RPC server
+2018-08-01 14:06:10.659	13960	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-08-01 14:06:11.371	13960	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:76	Binding on 127.0.0.1:8888
+2018-08-01 14:06:11.383	13960	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3009	Starting wallet RPC server
+2018-08-01 14:06:43.751	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'asa' is shorter than its prefix length, 4
+2018-08-01 14:06:43.751	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'ave' is shorter than its prefix length, 4
+2018-08-01 14:06:43.751	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'boa' is shorter than its prefix length, 4
+2018-08-01 14:06:43.751	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'cal' is shorter than its prefix length, 4
+2018-08-01 14:06:43.751	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'dar' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'don' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'dos' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'eco' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'eje' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'fax' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'feo' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'fin' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'gen' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'gol' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'haz' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'ira' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'luz' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'mar' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'mes' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'mil' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'oca' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'ojo' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'ola' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'oro' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'oso' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'pan' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'pez' is shorter than its prefix length, 4
+2018-08-01 14:06:43.755	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'pie' is shorter than its prefix length, 4
+2018-08-01 14:06:43.759	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'red' is shorter than its prefix length, 4
+2018-08-01 14:06:43.759	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'res' is shorter than its prefix length, 4
+2018-08-01 14:06:43.759	[RPC0]	WARN 	default	src/mnemonics/language_base.h:102	Español word 'rey' is shorter than its prefix length, 4
+2018-08-01 14:07:17.394	[RPC0]	WARN 	wallet.wallet2	src/wallet/wallet2.cpp:3783	Loaded wallet keys file, with public address: A2feVQKKAXU3MXecxJHFHg8SRxzNJjusfJgrsge1oYPiX22JN7e5M8uc3HysTTDJ1EG4m2Ez9MbMsCABp5VwNqWBLy3bwpJ
+2018-08-01 14:07:18.197	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3019	Stopped wallet RPC server
+2018-08-01 14:07:18.197	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3022	Saving wallet...
+2018-08-01 14:07:18.353	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3024	Successfully saved
+2018-08-01 14:08:12.534	42764	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-08-01 14:08:12.894	42764	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:76	Binding on 127.0.0.1:8888
+2018-08-01 14:08:12.894	42764	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3009	Starting wallet RPC server
+2018-08-01 14:08:22.325	[RPC0]	WARN 	wallet.wallet2	src/wallet/wallet2.cpp:3783	Loaded wallet keys file, with public address: A2feVQKKAXU3MXecxJHFHg8SRxzNJjusfJgrsge1oYPiX22JN7e5M8uc3HysTTDJ1EG4m2Ez9MbMsCABp5VwNqWBLy3bwpJ
+2018-08-01 14:08:22.629	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3019	Stopped wallet RPC server
+2018-08-01 14:08:22.629	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3022	Saving wallet...
+2018-08-01 14:08:22.827	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3024	Successfully saved
+2018-08-01 14:09:30.466	8604	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-08-01 14:09:31.527	8604	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:76	Binding on 127.0.0.1:8888
+2018-08-01 14:09:31.647	8604	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3009	Starting wallet RPC server
+2018-08-01 14:09:47.463	25348	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-08-01 14:09:49.099	25348	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:76	Binding on 127.0.0.1:8888
+2018-08-01 14:09:49.221	25348	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3009	Starting wallet RPC server
+2018-08-01 14:10:41.363	[RPC0]	WARN 	wallet.wallet2	src/wallet/wallet2.cpp:3783	Loaded wallet keys file, with public address: A2feVQKKAXU3MXecxJHFHg8SRxzNJjusfJgrsge1oYPiX22JN7e5M8uc3HysTTDJ1EG4m2Ez9MbMsCABp5VwNqWBLy3bwpJ
+2018-08-01 14:10:42.082	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3019	Stopped wallet RPC server
+2018-08-01 14:10:42.082	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3022	Saving wallet...
+2018-08-01 14:10:42.297	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3024	Successfully saved
+2018-08-01 14:11:42.446	14912	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-08-01 14:11:43.682	14912	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:76	Binding on 127.0.0.1:8888
+2018-08-01 14:11:43.745	14912	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3009	Starting wallet RPC server
+2018-08-01 14:11:47.255	[RPC0]	WARN 	wallet.wallet2	src/wallet/wallet2.cpp:3783	Loaded wallet keys file, with public address: A2feVQKKAXU3MXecxJHFHg8SRxzNJjusfJgrsge1oYPiX22JN7e5M8uc3HysTTDJ1EG4m2Ez9MbMsCABp5VwNqWBLy3bwpJ
+2018-08-01 14:11:48.073	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3019	Stopped wallet RPC server
+2018-08-01 14:11:48.073	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3022	Saving wallet...
+2018-08-01 14:11:48.276	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3024	Successfully saved
+2018-08-01 14:12:22.422	41784	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-08-01 14:12:22.993	41784	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:76	Binding on 127.0.0.1:8888
+2018-08-01 14:12:22.997	41784	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3009	Starting wallet RPC server
+2018-08-01 14:12:39.345	36316	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-08-01 14:12:41.260	36316	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:76	Binding on 127.0.0.1:8888
+2018-08-01 14:12:41.351	36316	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3009	Starting wallet RPC server
+2018-08-01 14:12:45.159	[RPC0]	WARN 	wallet.wallet2	src/wallet/wallet2.cpp:3783	Loaded wallet keys file, with public address: A2feVQKKAXU3MXecxJHFHg8SRxzNJjusfJgrsge1oYPiX22JN7e5M8uc3HysTTDJ1EG4m2Ez9MbMsCABp5VwNqWBLy3bwpJ
+2018-08-01 14:12:45.965	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3019	Stopped wallet RPC server
+2018-08-01 14:12:45.965	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3022	Saving wallet...
+2018-08-01 14:12:46.182	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3024	Successfully saved
+2018-08-01 14:13:08.702	13096	INFO 	logging	contrib/epee/src/mlog.cpp:186	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-08-01 14:13:09.180	13096	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:76	Binding on 127.0.0.1:8888
+2018-08-01 14:13:09.185	13096	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3009	Starting wallet RPC server
+2018-08-01 14:13:14.716	[RPC0]	WARN 	wallet.wallet2	src/wallet/wallet2.cpp:3783	Loaded wallet keys file, with public address: A2feVQKKAXU3MXecxJHFHg8SRxzNJjusfJgrsge1oYPiX22JN7e5M8uc3HysTTDJ1EG4m2Ez9MbMsCABp5VwNqWBLy3bwpJ
+2018-08-01 14:13:15.640	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3019	Stopped wallet RPC server
+2018-08-01 14:13:15.640	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3022	Saving wallet...
+2018-08-01 14:13:15.822	[SRV_MAIN]	WARN 	wallet.rpc	src/wallet/wallet_rpc_server.cpp:3024	Successfully saved

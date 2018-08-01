@@ -13,10 +13,9 @@ export default async function requestRPC(method, params) {
        options['json']['params'] = params;
    }
 
-   const res = new Promise((resolve) => {
+   return new Promise((resolve) => {
      request.post(`http://${hostname}:${port}/json_rpc`, options)
        .then((result) => {
-           console.log("result", result);
            if (result.hasOwnProperty('result')) {
                resolve(result.result);
            } else {
@@ -24,6 +23,4 @@ export default async function requestRPC(method, params) {
            }
        });
     });
-    const response = await res;
-    return response;
 }
